@@ -105,67 +105,7 @@
                     </div>
                 </div>
             </div>
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Atualizar cadastro</h5>
-                            <button type="button" class="close" @click="showEditModal=false">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body p-4">
-                            <form @submit.prevent="updateToAPI">
-                                <div class="form-group">
-                                    <input type="text" name="name"
-                                           class="form-control form-control-lg"
-                                           placeholder="Nome" v-model="currentUser.name"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="dateBirth"
-                                           class="form-control form-control-lg"
-                                           placeholder="Data de Nascimento" v-model="currentUser.birth"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="state" class="form-control form-control-lg"
-                                           placeholder="Estado" v-model="currentUser.state"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="city" class="form-control form-control-lg"
-                                           placeholder="Cidade" v-model="currentUser.name"/>
-                                </div>
-                                <div class="form-group">
-                                    <select name="sex" class="form-control form-control-lg" v-model="currentUser.sex">
-                                        <option value="Masculino">Masculino</option>
-                                        <option value="Feminino">Feminino</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="cep" class="form-control form-control-lg"
-                                           placeholder="Cep" v-model="currentUser.cep"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="address" class="form-control form-control-lg"
-                                           placeholder="Endereço" v-model="currentUser.address"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="number" class="form-control form-control-lg"
-                                           placeholder="Número" v-model="currentUser.number"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="complement" class="form-control form-control-lg"
-                                           placeholder="Complemento" v-model="currentUser.complement"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="district" class="form-control form-control-lg"
-                                           placeholder="Bairro" v-model="currentUser.district"/>
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-info btn-lg">Atualizar Cadastro</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
             <div class="overlay" v-if="showDeleteModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
